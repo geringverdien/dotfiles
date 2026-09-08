@@ -1,0 +1,65 @@
+## Two-line boxed prompt, white / monochrome.
+## Docs: https://starship.rs/config/
+
+# Blank line between each prompt so things stay airy.
+add_newline = true
+
+# Only the modules listed here render, which is what keeps it monochrome —
+# starship's colorful language/cloud modules are simply never drawn.
+format = """
+[╭─](dimmed white)$username$hostname$directory$git_status$cmd_duration
+[╰─](dimmed white)$character"""
+
+[directory]
+# Path is the loudest thing on screen: bright white + bold.
+format = "[  $path]($style)[$read_only]($read_only_style)"
+style = "bold bright-white"
+# Truncation drops leading components, so the folder you're *in* is never hidden.
+truncation_length = 4
+truncation_symbol = "…/"
+truncate_to_repo = false
+read_only = "  "
+read_only_style = "red"
+
+[directory.substitutions]
+"Documents" = " Documents"
+"Downloads" = " Downloads"
+"Music" = " Music"
+"Pictures" = " Pictures"
+
+[git_status]
+format = "([ $all_status$ahead_behind]($style))"
+style = "dimmed white"
+conflicted = "="
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = "*${count}"
+modified = "✚${count}"
+staged = "●${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
+
+[cmd_duration]
+min_time = 2000
+format = "[  $duration]($style)"
+style = "dimmed white"
+
+[character]
+format = "$symbol "
+success_symbol = "[❯](bold bright-white)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold bright-white)"
+
+# Shown only over SSH, so local prompts stay clean.
+[username]
+format = "[$user]($style)[@](dimmed white)"
+style_user = "dimmed white"
+style_root = "bold red"
+show_always = false
+
+[hostname]
+format = "[$hostname]($style) "
+style = "dimmed white"
+ssh_only = true

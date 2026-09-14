@@ -9,4 +9,4 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 fish_add_path /home/eli/.spicetify
 
 
-starship init fish | source
+starship init fish | sourceexport PATH="$HOME/.local/bin:$PATH"

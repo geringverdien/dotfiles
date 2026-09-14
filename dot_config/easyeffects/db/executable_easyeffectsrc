@@ -4,9 +4,9 @@ processAllOutputs=false
 [StreamInputs]
 inputDevice=alsa_input.pci-0000_30_00.6.analog-stereo
 listenToMic=true
-plugins=rnnoise#0,autogain#0
+plugins=echo_canceller#0,deepfilternet#0,autogain#0
 visiblePage=pluginsPage
-visiblePlugin=autogain#0
+visiblePlugin=echo_canceller#0
 
 [StreamOutputs]
 outputDevice=alsa_output.pci-0000_30_00.6.analog-stereo
@@ -14,6 +14,7 @@ visiblePage=pluginsPage
 
 [Window]
 autostartOnLogin=true
+height=1021
 noWindowAfterStarting=true
 visiblePage=inputPage
-visiblePresetSheetPage=communityPage
+width=1912

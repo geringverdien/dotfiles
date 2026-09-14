@@ -10,4 +10,4 @@ fish_add_path /home/eli/.spicetify
 
 
 starship init fish | source
-export PATH="$HOME/.local/bin:$PATH"
+set -gx PATH "$HOME/.local/bin" $PATH

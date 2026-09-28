@@ -309,6 +309,10 @@ plugin=org.kde.plasma.mediacontroller
 extraItems=org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.kclock_1x2
 knownItems=org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.kclock_1x2
 
+[Containments][93][Applets][28][Applets][104]
+immutability=1
+plugin=org.kde.plasma.battery
+
 [Containments][93][Applets][28][Applets][29]
 immutability=1
 plugin=org.kde.kdeconnect
@@ -349,9 +353,14 @@ plugin=org.kde.plasma.keyboardindicator
 immutability=1
 plugin=org.kde.plasma.weather
 
-[Containments][93][Applets][28][Applets][40]
-immutability=1
-plugin=org.kde.plasma.battery
+[Containments][93][Applets][28][Applets][38][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][93][Applets][28][Applets][38][Configuration][WeatherStation]
+placeDisplayName=Fronhausen, Hessen, DE
+placeInfo=place|Fronhausen, Hessen, DE|extra|DE0003110;Fronhausen
+provider=wettercom
 
 [Containments][93][Applets][28][Applets][41]
 immutability=1
@@ -381,7 +390,8 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][93][Applets][28][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.kclock_1x2,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.brightness
+extraItems=org.kde.kdeconnect,org.kde.plasma.kclock_1x2,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.weather,org.kde.plasma.keyboardindicator
+hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.battery,Cachy-Update,org.kde.plasma.weather,org.kde.plasma.keyboardindicator,Easy Effects
 knownItems=org.kde.kdeconnect,org.kde.plasma.kclock_1x2,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.brightness
 
 [Containments][93][Applets][94]

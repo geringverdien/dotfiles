@@ -1,3 +1,4 @@
 [sie][EchoCanceller#0]
+echoCancellerMobileMode=true
 enableAGC=false
 enableNoiseSuppression=false

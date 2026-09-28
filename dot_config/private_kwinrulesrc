@@ -1,0 +1,11 @@
+[906ff5f0-a54c-4654-88be-928e52c7466d]
+Description=Application settings for org.kde.dolphin
+excludefromcapture=true
+excludefromcapturerule=3
+wmclass=dolphin org.kde.dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=1
+rules=906ff5f0-a54c-4654-88be-928e52c7466d

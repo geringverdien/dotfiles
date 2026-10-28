@@ -12,3 +12,5 @@ fish_add_path /home/eli/.spicetify
 starship init fish | source
 set -gx PATH "$HOME/.local/bin" $PATH
 fnm env --use-on-cd | source
+set -gx EDITOR nvim
+set -gx VISUAL code

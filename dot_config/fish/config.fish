@@ -14,3 +14,12 @@ set -gx PATH "$HOME/.local/bin" $PATH
 fnm env --use-on-cd | source
 set -gx EDITOR nvim
 set -gx VISUAL code
+
+function history
+    switch "$argv[1]"
+        case clear delete merge save search
+            builtin history $argv
+        case '*'
+            builtin history --show-time='%F %T ' $argv
+    end
+end
